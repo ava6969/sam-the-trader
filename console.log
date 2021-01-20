@@ -1,0 +1,36 @@
+2021-01-19 13:34:31,796:stream2.py:63:INFO:root:connected to: wss://paper-api.alpaca.markets/stream
+2021-01-19 13:34:31,797:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connecting to Polygon', 'status': 'connecting'})
+2021-01-19 13:34:31,999:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connected Successfully', 'status': 'connected'})
+2021-01-19 13:34:31,999:streamconn.py:46:INFO:root:connected to: wss://socket.polygon.io/stocks
+2021-01-19 13:34:32,077:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'authenticated', 'status': 'auth_success'})
+2021-01-19 13:34:32,108:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'subscribed to: AM.AAPL', 'status': 'success'})
+2021-01-19 13:35:02,093:live_stock_trader.py:147:INFO:AAPL:received bar start = 2021-01-19 13:34:00-05:00, close = 128.015, len(bars) = 245
+2021-01-19 13:38:01,919:stream2.py:63:INFO:root:connected to: wss://paper-api.alpaca.markets/stream
+2021-01-19 13:38:01,919:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connecting to Polygon', 'status': 'connecting'})
+2021-01-19 13:38:02,100:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connected Successfully', 'status': 'connected'})
+2021-01-19 13:38:02,100:streamconn.py:46:INFO:root:connected to: wss://socket.polygon.io/stocks
+2021-01-19 13:38:02,178:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'authenticated', 'status': 'auth_success'})
+2021-01-19 13:38:02,195:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'subscribed to: AM.ZM', 'status': 'success'})
+2021-01-19 13:38:20,236:stream2.py:63:INFO:root:connected to: wss://paper-api.alpaca.markets/stream
+2021-01-19 13:38:20,237:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connecting to Polygon', 'status': 'connecting'})
+2021-01-19 13:38:20,484:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connected Successfully', 'status': 'connected'})
+2021-01-19 13:38:20,485:streamconn.py:46:INFO:root:connected to: wss://socket.polygon.io/stocks
+2021-01-19 13:38:20,516:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'authenticated', 'status': 'auth_success'})
+2021-01-19 13:38:20,547:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'subscribed to: AM.ZM', 'status': 'success'})
+2021-01-19 13:39:13,660:live_stock_trader.py:147:INFO:ZM:received bar start = 2021-01-19 13:38:00-05:00, close = 391.89, len(bars) = 249
+2021-01-19 13:40:44,568:stream2.py:63:INFO:root:connected to: wss://paper-api.alpaca.markets/stream
+2021-01-19 13:40:44,569:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connecting to Polygon', 'status': 'connecting'})
+2021-01-19 13:40:44,811:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connected Successfully', 'status': 'connected'})
+2021-01-19 13:40:44,811:streamconn.py:46:INFO:root:connected to: wss://socket.polygon.io/stocks
+2021-01-19 13:40:44,898:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'authenticated', 'status': 'auth_success'})
+2021-01-19 13:40:44,930:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'subscribed to: AM.ZM', 'status': 'success'})
+2021-01-19 13:41:05,284:live_stock_trader.py:147:INFO:ZM:received bar start = 2021-01-19 13:40:00-05:00, close = 391.725, len(bars) = 251
+2021-01-19 13:46:12,258:stream2.py:63:INFO:root:connected to: wss://paper-api.alpaca.markets/stream
+2021-01-19 13:46:12,259:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connecting to Polygon', 'status': 'connecting'})
+2021-01-19 13:46:12,436:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'Connected Successfully', 'status': 'connected'})
+2021-01-19 13:46:12,437:streamconn.py:46:INFO:root:connected to: wss://socket.polygon.io/stocks
+2021-01-19 13:46:12,502:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'authenticated', 'status': 'auth_success'})
+2021-01-19 13:46:12,521:live_trade.py:57:INFO:root:polygon status update Entity({'ev': 'status', 'message': 'subscribed to: AM.TSLA', 'status': 'success'})
+2021-01-19 13:47:02,053:live_stock_trader.py:147:INFO:TSLA:received bar start = 2021-01-19 13:46:00-05:00, close = 836.18, len(bars) = 257
+2021-01-19 13:47:02,105:live_stock_trader.py:183:INFO:TSLA:transition from NEW to STOCKS HELD
+2021-01-19 16:35:41,542:live_trade.py:63:INFO:root:exit as market is not open
