@@ -21,6 +21,9 @@ SAM observes and embedding of the following data:
   - OHLCV
   - 6 tech indicators[MACD MA EMA ATR ROC vwap]
   - cash left, sharp ratio and stocks owned
+
+## Fetch New data
+ - python downloader.py -h
  
 ## Train from scratch
 Create a yaml configuration in the folder /configs/
