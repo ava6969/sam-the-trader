@@ -5,8 +5,8 @@
 
 ## Setup
 #### Clone repository
- git clone https://github.com/ava6969/sam-the-trader.git
- cd sam-the-trader
+ - git clone https://github.com/ava6969/sam-the-trader.git
+ - cd sam-the-trader
 
 #### Install Environment
 conda env create -f environment.yml
