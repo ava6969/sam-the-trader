@@ -36,9 +36,9 @@ class SDAE_FULL(TorchModelV2):
         dim = [sdae_in] + dim_list
         self.extract_sdae = StackedDenoisingAutoEncoder(dim)
         self.lowest_loss = np.inf
-        stringify_dim = '_'.join(map(str, dim))
-        save_path = f'sdae_t_{stringify_dim}'
-        self.save_path = os.path.join('/home/dewe/sam/sdae_trainable_model', save_path)
+        # stringify_dim = '_'.join(map(str, dim))
+        # save_path = f'sdae_t_{stringify_dim}'
+        # self.save_path = os.path.join('/home/dewe/sam/sdae_trainable_model', save_path)
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
         self.sdae_loss = 0
@@ -101,12 +101,10 @@ class SDAE_FULL(TorchModelV2):
     def custom_loss(self, policy_loss: TensorType,
                     loss_inputs: Dict[str, TensorType]) -> TensorType:
         obs = loss_inputs['obs']
-
         def epoch_callback(epoch, autoencoder, model_idx, loss_value, validation_loss_value):
             self.sdae_loss = loss_value
             if loss_value < self.lowest_loss:
                 self.lowest_loss = loss_value
-                torch.save(autoencoder.state_dict(), self.save_path + f'_{model_idx}')
                 print('saved model at epoch with loss', self.lowest_loss)
 
         pretrain(obs,

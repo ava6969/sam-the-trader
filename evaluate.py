@@ -136,7 +136,7 @@ def evaluate_key(tf, run, key, tick, tick_to_trade, s_date, e_date, init_amt=Non
         extra = extra[-1]
         args.append((tf, run, key, checkpoints[i], param_files[0], extra,
                      passive, init_amt, init_h, tick, tick_to_trade, date, s_date, e_date, log_every))
-    batch = 3
+    batch = 9
     if multithread:
         for i in range(0, len(checkpoints), batch):
             threads = [threading.Thread(target=evaluate_run, args=args[j + i]) for j in range(batch)]

@@ -310,6 +310,15 @@ class SimStockTrader(gym.Env):
             return self.max_shares * action
 
     def compute_reward(self):
+
+        if self.reward_type == 'ALL':
+            del_p = self.close_price - self.prev_close_price
+            pc = del_p * self.action
+            sr = self.sharpe_ratio()
+            profit = (self.asset_memory[-1] - self.initial_amount) / self.initial_amount
+            tot = pc + sr + profit
+            return tot
+
         if self.reward_type == 'PC':
             del_p = self.close_price - self.prev_close_price
             res = del_p * self.action
